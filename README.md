@@ -86,12 +86,10 @@ to remove the content which is stored in methods.
 #### Limitations
 
 Only Forms and ColorForms are managed. Loading larger instances of forms may take a long time (10 minutes and more). 
-
+The bitmaps are not stored in compressed format. However on the other side the content may be made available in source code form.
 
 
 #### Further work
-
-Add StrikeFont and Midi files file as supported file type
 
 Instead of storing all the content in the class as integer values of the *.BMP equivalent store it in compressed form (i.e. in PNG or JPG format).
 
@@ -100,6 +98,8 @@ See
         Form fromBinaryStream: aBinaryStream
 
 The binary stream may be created in memory from a stored ByteArray.
+
+Add StrikeFont and Midi files file as supported file type
 
 
 
