@@ -15,8 +15,8 @@ The bitmaps may be stored as code thus with a single file many resources may be 
 ### Usage note
 
 - Add-Ons-ContentPack-Core.pck.st is the base code for Cuis in Cuis *.pck.st format
-- Add-Ons-ContentPack-Core.hjh.3.mcz is the same code ready to be filed into Cuis or Squeak
-- Add-Ons-ContentPack-Examples-hjh.1.mcz is a subclass of ContentPack2. The file loads in Cuis and Squeak. Loading needs time. Then see class side.
+- Add-Ons-ContentPack-Core-hjh.6.mcz is the same code ready to be filed into Cuis or Squeak
+- Add-Ons-ContentPack-Examples-hjh.4.mcz is a subclass of ContentPack2. The file loads in Cuis and Squeak. Loading needs time. Then see class side.
 
 
 
@@ -85,19 +85,15 @@ to remove the content which is stored in methods.
      		
 #### Limitations
 
-Only Forms and ColorForms are managed. Loading larger instances of forms may take a long time (10 minutes and more). 
-The bitmaps are not stored in compressed format. However on the other side the content may be made available in source code form.
+Only Forms and ColorForms are managed. For the storage in code JPEG compression is used.
+Loading larger instances of forms may take a long time (1 minute or more).
+
+However on the other side the content is made available in source code form.
 
 
 #### Further work
 
-Instead of storing all the content in the class as integer values of the *.BMP equivalent store it in compressed form (i.e. in PNG or JPG format).
-
-See 
-
-        Form fromBinaryStream: aBinaryStream
-
-The binary stream may be created in memory from a stored ByteArray.
+Find a way to distinguish between JPEG and PNG storage.
 
 Add StrikeFont and Midi files file as supported file type
 
@@ -105,7 +101,7 @@ Add StrikeFont and Midi files file as supported file type
 
 ####  Acknowledgment
 
-This code is a a major rewrite of the class ContentPack contained in  [1]  done by Casey Ramsberger.
+This code is a major rewrite of the class ContentPack contained in  [1]  done by Casey Ramsberger.
 
 
 #### Reference
