@@ -93,11 +93,9 @@ However on the other side the content is made available in source code form.
 
 #### Further work
 
-Find a way to distinguish between JPEG and PNG storage.
-
-Add StrikeFont and Midi files file as supported file type
-
-
+- Find a way to distinguish between JPEG and PNG storage.
+- http://jvuletich.org/pipermail/cuis_jvuletich.org/2013-February/000825.html
+- Add StrikeFont and Midi files file as supported file type
 
 ####  Acknowledgment
 
